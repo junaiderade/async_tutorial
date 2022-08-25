@@ -72,6 +72,11 @@ function createPost(post) {
 
 
 //async await with fetch
+//fetch returns a promise which can either resolve or reject
+//when it resolves it resolves with a response object, which 
+//is a representation of the http response
+//you have to use the json method which returns a SECOND
+//promise that reolves with the result as json
 
 async function fetchUsers(){
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
